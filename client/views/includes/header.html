@@ -1,27 +1,23 @@
 <template name="header">
-    <div id="masthead" class="">
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                </div>
-                <div class="col-md-4">
-                    <div class="well well-lg">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <img src="//placehold.it/160x90" class="img-responsive">
-                            </div>
-                            <div class="col-sm-6">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> <a href="/" class="navbar-brand">Home</a>
 
-                                <p class=""><i>“Stuff your eyes with wonder, live as if you’d drop dead in ten seconds.
-                                    See the world.
-                                    It’s more fantastic than any dream made or paid for in factories.”</i></p>
-                                </br>
-                                <p class="pull-right">- Ray Bradbury</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+
+                </ul>
+                <ul class="nav pull-right">
+                    {{loginButtons align="right"}}
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 </template>
