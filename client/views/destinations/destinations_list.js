@@ -1,5 +1,10 @@
 Template.destinationsList.helpers({
     destinations: function () {
-        return Destinations.find();
+        var regionId = Session.get('currentRegionId');
+        if(regionId){
+            return Destinations.find({regionId: regionId});
+        }else{
+            return Destinations.find();
+        }
     }
 });

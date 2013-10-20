@@ -1,0 +1,24 @@
+<template name="regionsList">
+    <div class="container" id="mycontentcon">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group navbar" id="sidebar">
+                    <ul class="nav" id="mynav" data-spy="affix" data-offset-top="280">
+                        <li>
+                            <a href="{{regionsListPath}}" class="list-group-item" contenteditable="false">All</a>
+                        </li>
+                        {{#each regions}}
+                            {{> regionItem}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-md-9" id="mycontent">
+                {{> destinationsList}}
+            </div>
+        </div>
+    </div>
+</template>
+

@@ -1,11 +1,29 @@
-if (Destinations.find().count() === 0) {
+if (Regions.find().count() === 0) {
+    var asia = Regions.insert({
+        name: 'Asia'
+    });
+
+    var europe = Regions.insert({
+        name: 'Europe'
+    });
+
     Destinations.insert({
-        name: 'Norway'
+        name: 'Norway',
+        regionId: europe
     });
     Destinations.insert({
-        name: 'Sweden'
+        name: 'Sweden',
+        regionId: europe
     });
     Destinations.insert({
-        name: 'Denmark'
+        name: 'Denmark',
+        regionId: europe
     });
+
+    Destinations.insert({
+        name: 'China',
+        regionId: asia
+    });
+
+
 }
