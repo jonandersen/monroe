@@ -5,6 +5,6 @@
         "node": "0.8.24"
     },
     "dependencies": {
-        "fibers": "1.0.0"
+        "fibers": "1.0.1"
     }
 }
